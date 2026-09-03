@@ -1,0 +1,52 @@
+.ty-brand {
+  align-items: center;
+  color: #fff;
+  display: inline-flex;
+  flex: none;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.ty-brand > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.ty-brand strong {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.ty-brand-chevron {
+  color: var(--orange, #ff8700);
+  display: inline-block;
+  font-size: 48px;
+  line-height: 0.55;
+  margin-left: 1px;
+  vertical-align: -2px;
+}
+
+.ty-brand small {
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  margin-top: 9px;
+}
+
+@media (max-width: 620px) {
+  .ty-brand strong {
+    font-size: 31px;
+  }
+
+  .ty-brand-chevron {
+    font-size: 42px;
+  }
+
+  .ty-brand small {
+    font-size: 8px;
+  }
+}

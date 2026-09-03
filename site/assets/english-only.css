@@ -1,0 +1,26 @@
+/* TengYoda English-only release: hide all legacy language controls. */
+.language-trigger,
+.lang-switch,
+[data-set-language],
+[data-lang-copy="zh-CN"],
+[data-lang-panel="zh-CN"] {
+  display: none !important;
+}
+
+[data-lang-copy="en"] {
+  display: inline !important;
+}
+
+[data-lang-panel="en"] {
+  display: block !important;
+}
+
+html,
+body {
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
+}
+
+body {
+  pointer-events: auto !important;
+}

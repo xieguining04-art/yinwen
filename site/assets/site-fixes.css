@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  overflow-y: auto !important;
+  overscroll-behavior-y: auto !important;
+}
