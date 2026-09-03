@@ -20,11 +20,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
       - name: Enable GitHub Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Prepare complete website
@@ -32,6 +34,7 @@ jobs:
         run: |
           mkdir -p _site
           cp -R site/. _site/
+
           if [ -d article-images ]; then
             mkdir -p _site/article-images
             cp -R article-images/. _site/article-images/
@@ -45,6 +48,12 @@ jobs:
 
       - name: Add English-only discovery metadata and verified company facts
         run: python3 tools/enhance_discovery.py --site _site
+
+      - name: Adapt links for the current GitHub Pages address
+        run: >-
+          python3 tools/apply_base_path.py
+          --site _site
+          --base-path "${{ steps.pages.outputs.base_path }}"
 
       - name: Prepare GitHub Pages artifact
         run: touch _site/.nojekyll
