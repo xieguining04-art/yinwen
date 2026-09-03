@@ -24,3 +24,7 @@
 ## 部署结果
 
 提交后打开仓库的 `Actions`，最新一条任务显示绿色勾号即代表发布完成。请检查首页、About、Contact、Services 和 Blog 的鼠标滚轮及移动端菜单。
+
+部署脚本会根据 GitHub Pages 输出自动处理预览路径。当前仓库预览地址带有
+`/yinwen/` 时可以正常加载；以后设置 `tengyodalogistics.com` 为 Custom domain
+后，会自动恢复为根目录路径，不需要替换工作流。
