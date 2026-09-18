@@ -1,0 +1,17 @@
+挖掘机中国至哥斯达黎加案例文章增量包（2026-09-18）
+
+推荐上传方法：
+1. 解压本压缩包。
+2. 打开现有 GitHub 仓库根目录，选择 Add file → Upload files。
+3. 按原目录上传并覆盖 articles、lib、public 文件夹中的文件。
+4. 提交到 main 分支，等待 GitHub Pages 部署完成。
+
+新增页面：
+https://tengyodalogistics.com/blog/shipping-excavator-china-costa-rica/
+
+本包只包含本篇文章所需的新增和更新文件，无需覆盖整个网站。
+
+部署后检查：
+- 文章和4张配图正常显示。
+- GitHub Actions 显示绿色成功。
+- 在 Google Search Console 测试新网址并请求编入索引。
