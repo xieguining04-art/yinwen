@@ -4,6 +4,7 @@ date: "2026-09-18"
 summary: "Compare RoRo, breakbulk and flat-rack shipping for a 30–35 ton excavator from China to Costa Rica, including quote details, ports and risk controls."
 category: "RoRo & Project Cargo"
 slug: "shipping-excavator-china-costa-rica"
+language: en
 author: "TengYoda Logistics"
 image: "/article-images/excavator-china-costa-rica-cover.webp"
 alt: "Heavy excavator inspected at a Chinese port before shipment to Costa Rica"
